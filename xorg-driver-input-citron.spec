@@ -1,24 +1,24 @@
 Summary:	X.org input driver for Citron Infrared Touch (CiTouch) devices
 Summary(pl.UTF-8):	Sterownik wejściowy X.org dla ekranów dotykowych Citron Infrared Touch (CiTouch)
 Name:		xorg-driver-input-citron
-Version:	2.2.0
+Version:	2.2.1
 Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-input-citron-%{version}.tar.bz2
-# Source0-md5:	1fe53cd055a69650f3c2e02377ec728c
+# Source0-md5:	4e254fcefb3bea55772e63c12570f6d9
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.19
-BuildRequires:	xorg-proto-inputproto-devel
+BuildRequires:	xorg-proto-inputproto-devel >= 1.4.1
 BuildRequires:	xorg-proto-randrproto-devel
 BuildRequires:	xorg-util-util-macros >= 0.99.2
-BuildRequires:	xorg-xserver-server-devel >= 1.0.99.901
-BuildRequires:  rpmbuild(macros) >= 1.389
+BuildRequires:	xorg-xserver-server-devel >= 1.4
+BuildRequires:	rpmbuild(macros) >= 1.389
 %requires_xorg_xserver_xinput
-Requires:	xorg-xserver-server >= 1.0.99.901
+Requires:	xorg-xserver-server >= 1.4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
